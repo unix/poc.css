@@ -1,0 +1,23 @@
+{
+  "name": "poc.css",
+  "version": "0.0.1",
+  "author": "witt (@unix)",
+  "license": "MIT",
+  "description": "Basic html styles for proof of concept",
+  "main": "dist/poc.css",
+  "bugs": {
+    "url": "https://github.com/unix/poc.css/issues"
+  },
+  "homepage": "https://poc.witt.im",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unix/poc.css"
+  },
+  "scripts": {
+    "dev": "vite build -w",
+    "build": "vite build --emptyOutDir && rm -f dist/poc.mjs"
+  },
+  "dependencies": {
+    "sass": "^1.66.1"
+  }
+}

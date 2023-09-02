@@ -1,0 +1,88 @@
+---
+const linkCode = `<code class="language-tsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/poc.css<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span></code>`
+const importCode = `<code class="language-tsx"><span class="token keyword">import</span> <span class="token string">'poc.css'</span></code>`
+---
+
+<div class="hero">
+  <div class="box"><h1>poc<span>.css</span></h1></div>
+</div>
+<div class="menu">
+  <a href="#examples">Examples</a>
+  <a href="https://github.com/unix/poc.css" target="_blank">GitHub</a>
+</div>
+<section>
+  <h2>How</h2>
+  <p>
+    The <b>poc.css</b> is a list of css styles that provide the base typography and
+    html element styles for your project. Refer to the code on <a href="#">Github</a
+    >.
+  </p>
+</section>
+<section>
+  <p>For most projects, you can just use the url in <code>html.head</code>:</p>
+  <pre set:html={linkCode} />
+</section>
+<section>
+  <p>
+    For <code>ESM</code> or other frameworks, you can also using <code>import</code>:
+  </p>
+  <pre set:html={importCode} />
+</section>
+<section>
+  <h2>Why</h2>
+  <p>
+    Whenever I create simple pages to research ideas or concepts, I get tired of
+    spending a lot of time on front-end styles like setting up <i>postcss</i>, <i
+      >tailwind</i
+    >, or CSS in JS. In fact, a style that contains the basic html elements is
+    enough, for which I created <code>poc.css</code>.
+  </p>
+  <p>
+    This is not meant to replace any solution, but to give scenarios like POCs,
+    personal projects, and placeholder logic a fallback option that allows you to
+    focus more on the thing itself, rather than add a lot of dependencies for the
+    simple style.
+  </p>
+  <p>
+    The <code>poc.css</code> is Omakase. If you need more customization then you
+    should consider using a larger solution rather than patching the styles.
+  </p>
+</section>
+
+<style>
+  .hero {
+    width: 100%;
+    height: 95vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding-bottom: 4rem;
+  }
+  .hero h1 {
+    border: none;
+    display: inline-block;
+    font-size: 4.5rem;
+    user-select: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .hero h1 span {
+    color: rgba(var(--poc-minors-5), 0.75);
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    z-index: 1;
+    @media only screen and (max-width: 668px) {
+      display: none;
+    }
+  }
+
+  .menu a {
+    margin-left: 0.75rem;
+  }
+</style>

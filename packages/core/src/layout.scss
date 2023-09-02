@@ -1,0 +1,60 @@
+* {
+  box-sizing: inherit;
+  text-rendering: geometricPrecision;
+}
+
+html {
+  font-size: var(--poc-font-base);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  font-family: var(--poc-family-sans);
+  background-color: rgb(var(--poc-accents-bg));
+}
+
+html,
+body {
+  width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+  height: auto;
+  background-color: rgb(var(--poc-accents-bg));
+  color: rgb(var(--poc-accents-fg));
+}
+
+body > main {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  max-width: var(--poc-bp-md);
+  margin: 0 auto;
+  padding: 0 1.5em;
+  box-sizing: border-box;
+  @include widthSizes(max-width, 1);
+}
+
+header,
+footer {
+  width: 100%;
+  height: auto;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+}
+
+section > :first-child {
+  margin-top: 0;
+}

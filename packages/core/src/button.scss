@@ -1,0 +1,58 @@
+button {
+  position: relative;
+  font-size: 0.875rem;
+  height: 2.15em;
+  padding: 0 1em;
+  border: none;
+  background: rgb(var(--poc-minors-max));
+  border-radius: var(--poc-rounded-md);
+  color: rgb(var(--poc-minors-1));
+  cursor: pointer;
+  user-select: none;
+  box-shadow:
+    0 1px 1px 1px rgba(0, 0, 0, 0.1),
+    0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  transition:
+    background 200ms linear,
+    box-shadow 200ms linear,
+    color 200ms linear;
+
+  &:hover:not([disabled]) {
+    background: rgb(var(--poc-minors-7));
+  }
+  &:active:not([disabled]) {
+    box-shadow:
+      0 1px 3px 0 rgba(0, 0, 0, 0),
+      0 1px 3px -1px rgba(0, 0, 0, 0);
+    background: rgb(var(--poc-minors-5));
+  }
+  &.secondary {
+    background: rgb(var(--poc-minors-min));
+    color: rgb(var(--poc-minors-7));
+    &:hover:not([disabled]) {
+      background: rgb(var(--poc-minors-1));
+    }
+    &:active:not([disabled]) {
+      background: rgb(var(--poc-minors-2));
+    }
+  }
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.75;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      cursor: not-allowed;
+      pointer-events: auto;
+    }
+  }
+
+  @include darkMode {
+    border: 1px solid rgb(var(--poc-minors-2));
+  }
+}

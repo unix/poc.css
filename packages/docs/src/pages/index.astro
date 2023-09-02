@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/layout.astro'
+import Intro from '../components/intro.astro'
+import Example from '../components/example.html'
+
+const code = `<code class="language-tsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">data-theme</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>dark<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">data-theme</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>light<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">data-theme</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>system<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span></code>`
+---
+
+<Layout>
+  <main style="background: rgb(var(--poc-accents-bg))">
+    <Intro />
+    <section>
+      <h2>Themes</h2>
+      <p>
+        The theme is set to <i>light mode</i> by default, you can switch to other
+        styles by adding attributes to the html, when set to <code>system</code>, it
+        will automatically follow the user's browser theme.
+      </p>
+      <pre set:html={code} />
+    </section>
+    <hr />
+    <section>
+      <h2 id="examples">Examples</h2>
+      <p>
+        The following are <b>all examples</b>, with content sourced from <a
+          href="https://developer.mozilla.org/"
+          target="_blank">MDN</a
+        >. You can find the HTML source file on <a>example.html</a> (no magic, just
+        HTML).
+      </p>
+    </section>
+    <Example />
+    <br />
+  </main>
+</Layout>

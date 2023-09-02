@@ -1,0 +1,178 @@
+<section>
+  <h3>List</h3>
+  <p>
+    Typically, ordered list items display with a preceding marker, such as a number
+    or letter. The ol and ul elements may nest as deeply as desired, alternating
+    between ol and ul however you like.
+  </p>
+  <ul>
+    <li>Steps in a recipe</li>
+    <li>Turn-by-turn directions</li>
+    <li>
+      The list of ingredients in decreasing proportion on nutrition information
+      labels
+    </li>
+  </ul>
+  <p>
+    The ol HTML element represents an ordered list of items — typically rendered as a
+    numbered list. To determine which list to use, try changing the order of the list
+    items; if the meaning changes, use the ol element — otherwise you can use ul.
+  </p>
+  <ol>
+    <li>Mix flour, baking powder, sugar, and salt.</li>
+    <li>In another bowl, mix eggs, milk, and oil.</li>
+    <li>Stir both mixtures together.</li>
+    <ol>
+      <li>Fill muffin tray 3/4 full.</li>
+      <li>Bake for 20 minutes.</li>
+    </ol>
+  </ol>
+</section>
+
+<section>
+  <h3>Button</h3>
+  <p>
+    The button HTML element is an interactive element activated by a user with a
+    mouse, keyboard, finger, voice command, or other assistive technology. Once
+    activated, it then performs an action, such as submitting a form or opening a
+    dialog.
+  </p>
+  <button>Submit</button>
+  <span style="margin-right: 10px"></span>
+  <button class="secondary">Mint</button>
+  <span style="margin-right: 10px"></span>
+  <button disabled>Login</button>
+  <span style="margin-right: 10px"></span>
+  <button class="secondary" disabled>Login</button>
+</section>
+
+<section>
+  <h3>Image</h3>
+  <p>
+    The figure HTML element represents self-contained content, potentially with an
+    optional caption, which is specified using the figcaption element. The figure,
+    its caption, and its contents are referenced as a single unit.
+  </p>
+  <figure class="lg">
+    <img src="demo.jpg" />
+    <figcaption>Macbook on the table.</figcaption>
+  </figure>
+</section>
+
+<section>
+  <h3>Content</h3>
+  <p>
+    The <code>blockquote</code> HTML element indicates that the enclosed text is an
+    extended quotation. Usually, this is rendered visually by indentation (see Notes
+    for how to change it). A URL for the source of the quotation may be given using
+    the cite attribute, while a text representation of the source can be given using
+    the <code>cite</code> element.
+  </p>
+  <blockquote>
+    <p>
+      "Hypertext" refers to links that connect web pages to one another, either
+      within a single website or between websites. Links are a fundamental aspect of
+      the Web. By uploading content to the Internet and linking it to pages created
+      by other people, you become an active participant in the World Wide Web.
+    </p>
+    <cite>-- HTML: HyperText Markup Language</cite>
+  </blockquote>
+  <p>
+    The details HTML element creates a disclosure widget in which information is
+    visible only when the widget is toggled into an "open" state. A summary or label
+    must be provided using the summary element. A disclosure widget is typically
+    presented onscreen using a small triangle which rotates (or twists) to indicate
+    open/closed status, with a label next to the triangle. The contents of the
+    summary element are used as the label for the disclosure widget.
+  </p>
+  <details>
+    <p>
+      Requires a computer running an operating system. The computer must have some
+      memory and ideally some kind of long-term storage. An input device as well as
+      some form of output device is recommended.
+    </p>
+    <summary>System Requirements</summary>
+  </details>
+</section>
+
+<section>
+  <h3>Table</h3>
+  <p>
+    A table is a structured set of data made up of rows and columns (tabular data). A
+    table allows you to quickly and easily look up values that indicate some kind of
+    connection between different types of data, for example a person and their age,
+    or a day of the week, or the timetable for a local swimming pool.
+  </p>
+  <table class="lg">
+    <caption>Stats on cloud services</caption>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Hosted</th>
+        <th>Total</th>
+        <th>Billing</th>
+        <th>Admin</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Fly</td>
+        <td>Yes</td>
+        <td>20</td>
+        <td>100$</td>
+        <td>Ana</td>
+      </tr>
+      <tr>
+        <td>Railway</td>
+        <td>Yes</td>
+        <td>18</td>
+        <td>20$</td>
+        <td>John</td>
+      </tr>
+      <tr>
+        <td>Heroku</td>
+        <td>No</td>
+        <td>0</td>
+        <td>80$</td>
+        <td>Witt</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h3>Form</h3>
+  <p>
+    As web developers, it's important that we never assume that people will know all
+    the things that we know. The diversity of people using the web—and by extension
+    your website—practically guarantees that some of your site's visitors will have
+    some variation in thought processes and/or circumstances that leads them to
+    interpret your forms very differently from you without clear and
+    properly-presented labels.
+  </p>
+  <div class="card md center">
+    <h3>Add maintainer</h3>
+    <p class="secondary">
+      Please add at least one maintenance person to the system, email and initial
+      password are required.
+    </p>
+    <br />
+    <form>
+      <label for="email">Email</label>
+      <input
+        id="email"
+        placeholder="name@domain"
+        type="email"
+        autocomplete
+        required
+      />
+      <br />
+      <label for="password">Password</label>
+      <input id="password" type="password" autocomplete />
+    </form>
+    <br />
+    <button>Submit</button>
+  </div>
+</section>
+
+<br />

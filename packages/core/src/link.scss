@@ -1,0 +1,29 @@
+a {
+  cursor: pointer;
+  line-height: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  color: rgb(var(--poc-minors-7));
+  text-decoration: 2px rgb(var(--poc-minors-8), 0.25) underline dashed;
+  text-decoration-thickness: 2px;
+  text-decoration-skip: edges;
+  text-underline-position: under;
+  text-decoration-skip-ink: none;
+  transition:
+    text-decoration-color 150ms linear,
+    color 150ms linear;
+
+  &:hover {
+    color: rgb(var(--poc-accents-link));
+    text-decoration-color: rgb(var(--poc-accents-link));
+  }
+
+  &:active {
+    color: rgba(var(--poc-accents-link), 0.75);
+    text-decoration-color: rgba(var(--poc-accents-link), 0.75);
+  }
+
+  @include darkMode {
+    text-decoration-color: rgba(var(--poc-minors-8), 0.5);
+  }
+}

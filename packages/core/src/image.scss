@@ -1,0 +1,25 @@
+figure {
+  @include widthSizes;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: var(--poc-rounded-md);
+}
+
+figcaption {
+  font-size: 0.8125rem;
+  margin: 0 auto;
+  padding: 0;
+  color: rgb(var(--poc-minors-5));
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+  -webkit-user-drag: none;
+  border-radius: var(--poc-rounded-md);
+  background-color: rgb(var(--poc-minors-min));
+}

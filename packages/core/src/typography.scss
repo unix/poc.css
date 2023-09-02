@@ -1,0 +1,148 @@
+h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  border-bottom: 2px dashed rgb(var(--poc-minors-1));
+  margin-bottom: 12px;
+  margin-top: 18px;
+
+  @include darkMode {
+    border-bottom: 2px dashed rgb(var(--poc-minors-4));
+  }
+}
+
+h2 {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
+
+p {
+  margin: 0 0 0.81em 0;
+  line-height: 1.525em;
+  letter-spacing: -0.005625em;
+}
+
+p.secondary {
+  color: rgba(var(--poc-accents-fg), 0.65);
+  font-size: 0.875rem;
+}
+
+b {
+  font-weight: 600;
+}
+
+i {
+  font-style: italic;
+}
+
+em {
+  font-style: italic;
+  font-weight: 600;
+}
+
+br {
+  content: '';
+  margin: 0;
+  height: 1em;
+  display: block;
+  width: 100%;
+}
+
+hr {
+  border: 0;
+  border-bottom: 2px dashed rgb(var(--poc-minors-1));
+  margin: 0.85em 0;
+
+  @include darkMode {
+    border-color: rgb(var(--poc-minors-4));
+  }
+}
+
+button,
+input,
+select,
+textarea,
+a,
+[tabindex] {
+  &:focus-visible {
+    transition: outline 150ms linear;
+    outline: 2px dashed rgb(var(--poc-minors-3));
+  }
+}
+
+::selection {
+  background-color: rgb(var(--poc-minors-8));
+  color: rgb(var(--poc-minors-0));
+}
+
+blockquote {
+  display: block;
+  position: relative;
+  border-radius: var(--poc-rounded-md);
+  font-size: 0.9375rem;
+  color: inherit;
+  background-color: rgba(var(--poc-minors-0), 0.75);
+  margin: 0.25em -1.5em 1em -1.5em;
+  padding: 1em 1.5em;
+
+  p {
+    margin-bottom: 0.5em;
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  cite {
+    margin: 0.7em 0 -0.25em 0;
+    display: inline-block;
+    width: 100%;
+    font-style: italic;
+    text-align: right;
+    font-weight: 500;
+  }
+}
+
+kbd {
+  display: inline-block;
+  line-height: inherit;
+  padding: 0 4px;
+  background-color: rgba(var(--poc-minors-0), 0.75);
+  border: 1px solid rgba(var(--poc-minors-1), 0.75);
+  border-radius: var(--poc-rounded-md);
+  font-family: var(--poc-family-mono);
+  font-size: 0.9em;
+  min-width: 1.7em;
+  text-align: center;
+}
+
+mark {
+  background-color: rgb(red, 0.35);
+  //color: rgb(var(--poc-accents-link), 0.5);
+}
