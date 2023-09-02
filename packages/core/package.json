@@ -1,6 +1,6 @@
 {
   "name": "poc.css",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "witt (@unix)",
   "license": "MIT",
   "description": "Basic html styles for proof of concept",
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "https://github.com/unix/poc.css"
   },
-  "files": ["dist"],
+  "files": ["dist", "LICENSE"],
   "scripts": {
     "dev": "vite build -w",
     "build": "vite build --emptyOutDir && rm -f dist/poc.mjs"
