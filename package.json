@@ -6,7 +6,8 @@
     "dev": "pnpm --filter poc.css dev",
     "build": "pnpm --filter poc.css build",
     "docs:dev": "pnpm --filter docs dev",
-    "docs:build": "pnpm --filter docs build",
+    "docs:build": "pnpm build && pnpm --filter docs build",
+    "release": "pnpm build && pnpm --filter poc.css publish --access public --no-git-checks",
     "prettier": "prettier --write **/*.astro .",
     "preinstall": "npx only-allow pnpm"
   },

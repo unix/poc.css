@@ -13,6 +13,7 @@
     "type": "git",
     "url": "https://github.com/unix/poc.css"
   },
+  "files": ["dist"],
   "scripts": {
     "dev": "vite build -w",
     "build": "vite build --emptyOutDir && rm -f dist/poc.mjs"
