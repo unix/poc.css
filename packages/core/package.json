@@ -1,6 +1,6 @@
 {
   "name": "poc.css",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "witt (@unix)",
   "license": "MIT",
   "description": "Basic html styles for proof of concept",
@@ -18,7 +18,7 @@
     "dev": "vite build -w",
     "build": "vite build --emptyOutDir && rm -f dist/poc.mjs"
   },
-  "dependencies": {
+  "devDependencies": {
     "sass": "^1.66.1"
   }
 }
