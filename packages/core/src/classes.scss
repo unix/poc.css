@@ -1,3 +1,5 @@
+@use 'vars' as *;
+
 .card {
   @include widthSizes;
   width: 100%;
@@ -24,7 +26,8 @@
 }
 
 body.dot {
-  background-image: radial-gradient(rgb(var(--poc-minors-1)) 1px, transparent 0),
+  background-image:
+    radial-gradient(rgb(var(--poc-minors-1)) 1px, transparent 0),
     radial-gradient(rgb(var(--poc-minors-1)) 1px, transparent 0);
   background-position:
     0 0,

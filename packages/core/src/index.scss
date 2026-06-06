@@ -1,14 +1,14 @@
 /**
   * poc.css
   */
-@import 'vars';
-@import 'layout';
-@import 'typography';
-@import 'button';
-@import 'code';
-@import 'link';
-@import 'list';
-@import 'form';
-@import 'classes';
-@import 'image';
-@import 'table';
+@use 'vars';
+@use 'layout';
+@use 'typography';
+@use 'button';
+@use 'code';
+@use 'link';
+@use 'list';
+@use 'form';
+@use 'classes';
+@use 'image';
+@use 'table';

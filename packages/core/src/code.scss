@@ -1,3 +1,5 @@
+@use 'vars' as *;
+
 code {
   border-radius: var(--poc-rounded-md);
   color: rgb(var(--poc-accents-code));
