@@ -11,6 +11,10 @@
     "prettier": "prettier --write **/*.astro .",
     "preinstall": "npx only-allow pnpm"
   },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/unix/poc.css"
+  },
   "devDependencies": {
     "@unix/prettier": "^0.1.0",
     "prettier": "^3.8.3",
