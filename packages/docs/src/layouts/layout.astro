@@ -27,6 +27,18 @@ import 'poc.css'
       content="Basic html styles for proof of concept."
     />
     <meta name="twitter:image" content="https://poc.witt.im/og.png" />
+    <script
+      is:inline
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8VVPELF8MZ"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+      gtag('config', 'G-8VVPELF8MZ')
+    </script>
   </head>
   <body>
     <slot />
